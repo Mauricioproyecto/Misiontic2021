@@ -41,6 +41,6 @@ ul {
 
 .secondaryButton:hover {
     cursor: pointer;
-    box-shadow: 1px, 1px, rgb(119, 229, 233);
+    box-shadow: 1px, 1px, rgb(119, 229, 234);
 
 }

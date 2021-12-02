@@ -12,6 +12,8 @@ ul {
 
 .logo {
     height: 60px;
+}
+
 .mainButton {
     background-color: mediumseagreen;
     color: white;
@@ -27,4 +29,20 @@ ul {
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 1px, 1px, green;
+}
+
+.buscar {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.buscar:focus-within {
+    border: 1px solid blue;
+}
+
+.buscar > input {
+    outline: none;
+    border: 0px;
 }

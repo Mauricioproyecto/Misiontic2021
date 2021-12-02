@@ -38,9 +38,15 @@ ul {
     border-radius: 8px;
 }
 
+<<<<<<< HEAD
 .buscar:focus-within {
     border: 1px solid blue;
 }
+=======
+.secondaryButton:hover {
+    cursor: pointer;
+    box-shadow: 1px, 1px, rgb(119, 229, 234);
+>>>>>>> 6.crear-boton-login
 
 .buscar > input {
     outline: none;

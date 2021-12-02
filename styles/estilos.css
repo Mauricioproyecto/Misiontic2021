@@ -10,19 +10,37 @@ ul {
     justify-content: space-between;
 }
 
-.mainButton {
-    background-color: mediumseagreen;
-    color: white;
+.button {
     border: 0px;
     padding: 5px, 10px;
     border-radius: 10px;
     font-weight: bolder;
     
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.mainButton {
+    background-color: mediumseagreen;
+    color: white;
+    
     
 }
 
 .mainButton:hover {
-    cursor: pointer;
-    transform: scale(1.1);
     box-shadow: 1px, 1px, green;
+}
+
+.secondaryButton {
+    background-color: lightblue;
+    color: white;
+}
+
+.secondaryButton:hover {
+    cursor: pointer;
+    box-shadow: 1px, 1px, rgb(119, 229, 233);
+
 }

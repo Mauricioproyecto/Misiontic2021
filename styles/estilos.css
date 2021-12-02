@@ -10,10 +10,8 @@ ul {
     justify-content: space-between;
 }
 
-<<<<<<< HEAD
 .logo {
     height: 60px;
-=======
 .mainButton {
     background-color: mediumseagreen;
     color: white;
@@ -29,5 +27,4 @@ ul {
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 1px, 1px, green;
->>>>>>> 5.crear-boton-nuevo-post
 }

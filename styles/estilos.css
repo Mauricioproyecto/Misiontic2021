@@ -13,6 +13,17 @@ ul {
 .logo {
     height: 60px;
 }
+.button {
+    border: 0px;
+    padding: 5px, 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    
+}
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 .mainButton {
     background-color: mediumseagreen;
@@ -38,15 +49,19 @@ ul {
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
 .buscar:focus-within {
     border: 1px solid blue;
 }
-=======
+
+.secondaryButton {
+    background-color: rgb(105, 199, 223);
+    color: white;
+}
+
 .secondaryButton:hover {
     cursor: pointer;
     box-shadow: 1px, 1px, rgb(119, 229, 234);
->>>>>>> 6.crear-boton-login
+}
 
 .buscar > input {
     outline: none;

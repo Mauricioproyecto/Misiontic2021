@@ -8,8 +8,16 @@ ul {
 .navbar{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(237, 237, 238) ;
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 1px gray;
 }
 
+.navbar > li {
+    display: flex;
+    align-items: center;
+}
 .logo {
     height: 60px;
 }
@@ -47,6 +55,9 @@ ul {
     border: 1px solid gray;
     padding: 4px;
     border-radius: 8px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buscar:focus-within {
@@ -66,4 +77,48 @@ ul {
 .buscar > input {
     outline: none;
     border: 0px;
+}
+.iconobusqueda:hover {
+    color:blue; 
+}
+
+.breedCardContainer {
+    display: flex;
+
+}
+
+.breedCard {
+    margin: 10px;
+    background-color: rgb(78, 78, 90);
+    box-shadow: 5px 10px 5px gainsboro;
+    border-radius: 10px;
+}
+
+.breedTittle {
+    color: ghostwhite;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.contenedorImagen {
+    width: 240px;
+    height: 350px;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.contenedorImagen:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+
+}
+
+.contenedorImagen > img {
+    object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
 }

@@ -6,6 +6,7 @@ import rhodesian from './media/rhodesian.jpg'
 function App() {
   return (
     <div className="App">
+      
           <header>
             <ul className="navbar">
                 <li>
@@ -33,19 +34,8 @@ function App() {
             <section>
                 <h1>Razas de Perros</h1>
                   <ul className="breedCardContainer">
-                    <li className="breedCard">
-                        <div className="contenedorImagen">
-                            <img src={borderCollie} alt="border collie"/>
-                        </div>
-                          <span className="breedTittle">Border Collie</span>
-
-                    </li>
-                    <li class="breedCard"> 
-                          <div className="contenedorImagen">
-                            <img src={rhodesian} alt="Rhodesian"/>
-                          </div>
-                        <span className="breedTittle">Rhodesian</span>
-                    </li>
+                    <CardRazasPerros nombreRaza='BorderCollie' imagen={borderCollie}/>                 
+                    <CardRazasPerros nombreRaza='Rhodesian' imagen={rhodesian}/>                                                        
                   </ul>
             </section>
           </main>
@@ -53,6 +43,16 @@ function App() {
 
     </div>
   );
+}
+
+function CardRazasPerros (props) {
+  return (
+  <li class="breedCard"> 
+  <div className="contenedorImagen">
+    <img src={props.imagen} alt={props.nombreRaza}/>
+  </div>
+<span className="breedTittle">{props.nombreRaza}</span>
+</li>)
 }
 
 export default App;

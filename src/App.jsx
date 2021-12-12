@@ -1,3 +1,4 @@
+import CardRazasPerros from './components/CardRazasPerros';
 import logo from './media/logo.jpg'
 import './styles/App.css';
 import borderCollie from './media/bodercollie.jpg'
@@ -45,14 +46,6 @@ function App() {
   );
 }
 
-function CardRazasPerros (props) {
-  return (
-  <li class="breedCard"> 
-  <div className="contenedorImagen">
-    <img src={props.imagen} alt={props.nombreRaza}/>
-  </div>
-<span className="breedTittle">{props.nombreRaza}</span>
-</li>)
-}
+
 
 export default App;

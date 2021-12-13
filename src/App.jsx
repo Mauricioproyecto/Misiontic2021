@@ -1,47 +1,23 @@
-import CardRazasPerros from './components/CardRazasPerros';
-import logo from './media/logo.jpg'
-import './styles/App.css';
-import borderCollie from './media/bodercollie.jpg'
-import rhodesian from './media/rhodesian.jpg'
+import Index from 'pages';
+import RhodesianInfoPage from 'pages/rhodesian';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import 'styles/App.css';
+
 
 function App() {
   return (
     <div className="App">
-      
-          <header>
-            <ul className="navbar">
-                <li>
-                    <img className="logo" src={logo} alt="logoPerro"/>
-                </li>
-                <li>
-                    <button className="button mainButton" >Nuevo Post</button>
-                </li>
-            
-                <li>
-                    <div className="buscar">
-                        <input  placeholder="buscar una raza" type="text"/>
-                        <i className="fas fa-search button iconobusqueda"></i>
-                    </div>
-                </li>
-            
-                <li> <button className="button secondaryButton">Login</button> </li>
-                <li>
-                    <button className="button mainButton" >Registro</button>
-                </li>
-           
-            </ul>
-          </header>
-          <main>
-            <section>
-                <h1>Razas de Perros</h1>
-                  <ul className="breedCardContainer">
-                    <CardRazasPerros nombreRaza='BorderCollie' imagen={borderCollie}/>                 
-                    <CardRazasPerros nombreRaza='Rhodesian' imagen={rhodesian}/>                                                        
-                  </ul>
-            </section>
-          </main>
-          <footer></footer>
-
+      <Router>
+        <Switch>
+          <Route path='rhodesian'>
+            <RhodesianInfoPage/>
+          </Route>
+          <Route path='/'>
+            <Index/>      
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
